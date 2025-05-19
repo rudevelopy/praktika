@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SEO оптимизация со списком товаров</title>
+  </head>
+  <body>
+    <div id="productList">
+      <script>
+        const products = ["Товар 1", "Товар 2", "Товар 3"];
+        const productList = document.getElementById("productList");
+        products.forEach((product) => {
+          const item = document.createElement("p");
+          item.textContent = product;
+          productList.appendChild(item);
+        });
+      </script>
+    </div>
+
+    <noscript>
+      <p>
+        JavaScript отключен. Пожалуйста, включите его для просмотра
+        динамического списка.
+      </p>
+      <p>Товар 1</p>
+      <p>Товар 2</p>
+      <p>Товар 3</p>
+      <p>
+        Пожалуйста, посетите
+        <a href="full-page.html">полную версию страницы</a> для более подробной
+        информации.
+      </p>
+    </noscript>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+body, html {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+* {
+    /* border: 1px solid rgb(241, 6, 6)!important; */
+}
+
+.top-block {
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.top-block h1 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.top-block h2 {
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.content-block {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+.registration {
+    height: 315px;
+    width: 400px;
+}
+
+.registration form {
+    border: 2px solid blue; 
+    padding: 20px;
+    width: 380px;
+    height: 285px; 
+    margin: 0 auto; 
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+}
+
+.registration input[type="text"],
+.registration input[type="email"] {
+    border: 2px solid blue; 
+    border-radius: 4px; 
+    width: calc(100% - 16px); 
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.form__title {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+    padding: 0px 0 15px 0;
+}
+
+.registration button {
+    background-color: blue; 
+    color: white; 
+    border: none; 
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.registration button:hover {
+    background-color: darkblue; 
+}   
+
+.section-block {
+    margin-top: 120px;
+    padding: 20px 0;
+}
+
+.section__title {
+    text-align: center;
+    padding: 20px 0 40px 0;
+    margin-bottom: 30px;
+}
+
+.icon__info__list {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 100px;
+}
+
+.section__title h3 {
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+.icon__info__img {
+    height: 80px;
+    width: 80px;
+}
+
+.icon__info__item {
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+.btn__get__instruction {
+    padding: 10px 0;
+}
+
+.get__insctruction {
+    background-color: blue; 
+    color: white; 
+    border: none; 
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 400px;
+    min-height: 50px;
+    box-sizing: border-box;
+}

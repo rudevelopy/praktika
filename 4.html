@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SPA с использованием noscript</title>
+    <meta
+      name="description"
+      content="Одностраничное приложение с маршрутизацией на JavaScript"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="#home" onclick="navigate('home')">Домой</a>
+      <a href="#about" onclick="navigate('about')">О нас</a>
+      <a href="#contact" onclick="navigate('contact')">Контакты</a>
+    </nav>
+
+    <div id="app">
+      <h1>Добро пожаловать в наше приложение</h1>
+    </div>
+
+    <script>
+      function navigate(page) {
+        const app = document.getElementById("app");
+        let content = "<h1>Добро пожаловать в наше приложение</h1>";
+
+        if (page === "about") {
+          content = "<h1>О нас</h1><p>Мы — современная компания...</p>";
+        } else if (page === "contact") {
+          content = "<h1>Контакты</h1><p>Свяжитесь с нами по адресу...</p>";
+        }
+
+        app.innerHTML = content;
+      }
+    </script>
+
+    <noscript>
+      <p>
+        JavaScript отключен. Пожалуйста, включите его для использования нашего
+        сайта в полной мере.
+      </p>
+      <p>
+        Посетите <a href="static-home.html">наш статичный дом</a> для
+        дополнительной информации.
+      </p>
+    </noscript>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Интерактивная форма с использованием noscript</title>
+  </head>
+  <body>
+    <form id="myForm" onsubmit="return validateForm();">
+      <label for="emailInput">Email: </label>
+      <input type="email" id="emailInput" required />
+      <button type="submit">Отправить</button>
+    </form>
+
+    <script>
+      function validateForm() {
+        const emailInput = document.getElementById("emailInput");
+        if (!emailInput.checkValidity()) {
+          alert("Пожалуйста, введите корректный email!");
+          return false;
+        }
+        alert("Форма успешно отправлена!");
+        return true;
+      }
+    </script>
+
+    <noscript>
+      <p>
+        JavaScript отключен. Пожалуйста, включите JavaScript для проверки формы.
+      </p>
+      <form action="static-page.html">
+        <button type="submit">Перейти на статичную страницу</button>
+      </form>
+    </noscript>
+  </body>
+</html>

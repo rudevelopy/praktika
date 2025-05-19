@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Форма с JavaScript валидацией</title>
+  </head>
+  <body>
+    <form id="myForm">
+      <input type="email" required placeholder="Ваш email" />
+      <button type="submit">Отправить</button>
+    </form>
+
+    <noscript>
+      <p>Для отправки формы требуется JavaScript.</p>
+      <a href="static_page.html">Перейти на статичную страницу</a>
+    </noscript>
+
+    <script>
+      document
+        .getElementById("myForm")
+        .addEventListener("submit", function (event) {
+          alert("Форма отправлена!");
+          event.preventDefault();
+        });
+    </script>
+  </body>
+</html>
